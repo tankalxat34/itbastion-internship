@@ -1,0 +1,10 @@
+button.like {
+    border: none;
+    border-radius: 0;
+}
+
+.clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

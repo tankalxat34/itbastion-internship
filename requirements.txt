@@ -1,0 +1,6 @@
+flask==2.3.2
+python-dotenv==1.0.0
+colorama==0.4.6
+werkzeug==2.3.6
+markdown==3.4.3
+markdownify==0.11.6
