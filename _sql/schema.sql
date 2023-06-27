@@ -1,7 +1,7 @@
--- Language: SQLite3
--- Migration stage: 1
--- Author: Alexander Podstrechnyy <tankalxat34@gmail.com>
--- Description: First migration to create structure for application
+-- Language:            SQLite3
+-- Migration stage:     1
+-- Author:              Alexander Podstrechnyy <tankalxat34@gmail.com>
+-- Description:         First migration to create structure for application
 
 DROP TABLE IF EXISTS posts;
 

@@ -78,10 +78,11 @@ def create():
 @app.route('/<int:id>/edit', methods=('GET', 'POST'))
 def edit(id):
     post = get_post(id)
+    markdown_content = markdownify.markdownify(post['content'] or request.form['content'])
 
     if request.method == 'POST':
         title = request.form['title']
-        content = markdownify.markdownify(request.form['content'])
+        content = request.form['content']
 
         if not title:
             flash('Title is required!')
@@ -96,5 +97,5 @@ def edit(id):
             conn.close()
             return redirect(url_for('index'))
 
-    return render_template('edit.html', post=post)
+    return render_template('edit.html', post=post, markdown_content=markdown_content)
 

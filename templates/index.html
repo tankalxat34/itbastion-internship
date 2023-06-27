@@ -9,7 +9,7 @@
         </a>
         <br>
         <div class="clip">
-            {{ post['content'] | striptags}}
+            {{ ' '.join(post['content'].split('\n')[0:5]) | striptags }}
         </div>
         <a href="{{ url_for('edit', id=post['id']) }}">
             <span class="badge badge-warning">Edit</span>
