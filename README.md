@@ -13,10 +13,10 @@
 ```powershell
 python -m venv venv
 
-pip install -r requirements.txt
-
 venv\Scripts\activate.bat # для Windows
 source venv/bin/activate # для Linux/MacOS
+
+pip install -r requirements.txt
 ```
 
 4. Создать файл `.env` с переменными окружения
